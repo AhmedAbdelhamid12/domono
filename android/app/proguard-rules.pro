@@ -1,0 +1,7 @@
+-keep class androidx.lifecycle.** { *; }
+-keep class com.google.** { *; }
+-keep class io.flutter.** { *; }
+-keep class org.json.** { *; }
+-keep class kotlin.** { *; }
+-keep class kotlinx.** { *; }
+-keep class * implements com.google.gson.TypeAdapterFactory

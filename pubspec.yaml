@@ -1,0 +1,46 @@
+name: domino_score
+description: "Domino Score Tracker"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+  flutter: ">=3.16.0"
+dependencies:
+  flutter:
+    sdk: flutter
+
+  shared_preferences: ^2.2.2
+  intl: ^0.20.2
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_native_splash: ^2.3.3
+  build_runner: ^2.5.1
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/
+
+
+# ✅ خارج قسم flutter
+flutter_intl:
+  enabled: true
+  arb_dir: lib/l10n
+  template_arb_file: app_en.arb
+  output_localization_file: app_localizations.dart
+  output_class: AppLocalizations
+
+flutter_native_splash:
+  color: "#F5F5F5"
+  image: assets/images/splash.png
+  android: true
+  ios: true
